@@ -1,0 +1,87 @@
+.btn{
+  opacity: 0.8;
+}
+.btn:hover{
+  opacity: 1;
+  color: white;
+}
+.btn:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.row{
+  margin-bottom: 1%;
+}
+
+.container{
+  min-width: calc(400px + 11vw);
+}
+
+#output{
+  height: 60px;
+  position:relative;
+  color:black;
+  background-color:#bccd95;
+  font-size:30px;
+  text-align:right;
+  min-width: calc(250px + 13vw);
+  margin: 0 11px 0 0
+}
+
+#equals{
+  min-width: calc(61px + 11vw);
+  margin: 0 11px 0 0;
+}
+
+p{
+  font-size: 10vw;
+}
+.numButton{
+  font-size: calc(14px + 1vw);
+  border: black solid 2px;
+  min-width: calc(30px + 5vw);
+  margin: 0 10px 0 0;
+}
+h1{
+  font-size: 5em;
+}
+
+
+
+body{
+ background-image: url("WhiteBackground.png");
+ color: black;
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+ min-height: 800px;
+}
+
+/*ANIMATIONS*/
+.fallDown {
+  animation: fallDown .7s linear, fadeIn .4s ease-in;
+}
+
+@keyframes fallDown{
+  0% {
+    transform: translateY(400px);
+    animation-timing-function: ease-out;
+  }
+  60% {
+    transform: translateY(-50px);
+    animation-timing-function: ease-in;
+  }
+  80% {
+    transform: translateY(10px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-in;
+  }
+}
+@keyframes fadeIn{
+  from {opacity:0;}
+  to {opacity:1;}
+}
